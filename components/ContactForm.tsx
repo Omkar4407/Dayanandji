@@ -290,7 +290,7 @@ This Message was sent by ${formData.name} through the NEWays Bharat Federation W
       <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-cerulean/10 rounded-lg border-l-4 border-fun-blue">
         <p className="text-sm text-gray-600">
           <strong>How it works:</strong> Click "Send Message" to open Gmail compose with your message pre-filled. 
-          If Gmail doesn't open, use the manual options above. You can also contact us directly at <a href="mailto:khushi@adsmagnify.in" className="text-fun-blue hover:underline">khushi@adsmagnify.in</a>
+          If Gmail doesn't open, use the manual options above. You can also contact us directly at <a href="mailto:neways008@gmail.com" className="text-fun-blue hover:underline">neways008@gmail.com</a>
         </p>
       </div>
     </div>
