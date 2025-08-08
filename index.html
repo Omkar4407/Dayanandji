@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEWays Bharat Federation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+     html {
+      scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #064635;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #F0A500;
+      font-size: 1.5rem;
+    }
+    header h1 a {
+      color: #F0A500;
+      text-decoration: none;
+    }
+    header h1 a:hover {
+      color: white;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+    }
+    header nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      position: relative;
+    }
+    header nav a:hover {
+      color: #F0A500;
+    }
+    header nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #F0A500;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+    header nav a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      background: linear-gradient(to right, rgba(6,70,53,0.85), rgba(6,70,53,0.65)), url('https://source.unsplash.com/1600x900/?rural,india') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 4rem 2rem;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+    }
+    section {
+      padding: 100px 50px 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #064635;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #F0A500;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #064635;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header nav {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      header nav a {
+        margin: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <h1><a href="#home">NEWays Bharat</a></h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#social">Social Work</a>
+    <a href="#education">Education</a>
+    <a href="#science">Science & Tech</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home" data-aos="fade-up">
+  <h1>Empowering Rural India, Together</h1>
+  <p>Driving transformation in education, technology, entrepreneurship, and social welfare for a stronger, self-reliant Bharat.</p>
+</div>
+
+<section id="about" data-aos="fade-right">
+  <h2>About Us</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+    <img
+      src="NW_Dayanandji.jpg"
+      alt="Dayanand Dhonduji Sawant - Founder"
+      style="width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"
+      data-aos="fade-right"
+      data-aos-delay="200"
+    >
+    <div style="flex: 1; min-width: 250px;" data-aos="fade-right" data-aos-delay="400">
+      <p>
+        NEWays Bharat Federation is a national initiative focused on <strong>uplifting communities</strong> through grassroots movements in <em>education, science, entrepreneurship, and social reform.</em> Founded with a vision to bridge traditional values and modern innovation, the organization is committed to building a <strong>sustainable and empowered India</strong>.
+      </p>
+      <blockquote style="margin-top: 1rem; font-style: italic; color: #555; border-left: 4px solid #F0A500; padding-left: 1rem;">
+        "My journey is dedicated to empowering communities, fostering self-reliance, and connecting people through education, social
+        service, and leadership. Progress begins when we uplift others and create opportunities for growth"
+        <span style="display: block; margin-top: 0.75rem; text-align: right; font-weight: bold; color: #333;">
+          – Dayanand Dhonduji Sawant, Founder
+        </span>
+      </blockquote>
+    </div>
+  </div>
+</section>
+ 
+<section id="social" data-aos="fade-up">
+  <h2>Social Work</h2>
+  <ul>
+    <li>Disaster relief and blood donation drives</li>
+    <li>Organizing community sports & youth training</li>
+    <li>Support for local artists and rural schools</li>
+    <li>Promoting women-led self-help groups</li>
+    <li>Cleanliness and anti-encroachment campaigns</li>
+  </ul>
+</section>
+
+<section id="education" data-aos="fade-up">
+  <h2>Education & Youth Development</h2>
+  <p>We believe education is the foundation for empowerment. Through institutions like Govind Bal Mandir and active learning projects, we've mentored youth across India, organized field trips, trained teachers, and promoted curiosity-led innovation among school children.</p>
+</section>
+
+<section id="science" data-aos="fade-up">
+  <h2>Science, Innovation & Rural Tech</h2>
+  <p>Partnering with Vigyan Bharati and other networks, we've hosted lectures on ancient sciences, organized innovation exhibitions, and empowered entrepreneurs in villages to use science for scalable impact.</p>
+</section>
+
+<section id="gallery" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="NW_Kids (4).jpg" alt="Dhayanandji with children, a memory from the North East" />
+    <img src="NW_Dignitaties (3).jpg" alt="" />
+    <img src="NW_NorthEast (6).jpg" alt="" />
+    <img src="NW_Dignitaties (6).jpg" alt="" />
+    <img src="NW_Kids (2).jpg" alt="" />
+    <img src="NW_Dignitaties (7).jpg" alt="" />
+    <img src="NW_NorthEast (2).jpg" alt="" />
+    <img src="NW_NorthEast (4).jpg" alt="" />
+    <img src="abc (1).jpg" alt="" />
+    <img src="NW_NorthEast (3).jpg" alt="" />
+    <img src="NW_Kids (3).jpg" alt="" />
+
+  </div>
+</section>
+
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <p><strong>Phone:</strong> +91 9820939957</p>
+  <p>We welcome collaborations, volunteers, and partners in our mission to create a resilient Bharat. Reach out to join our journey.</p>
+</section>
+
+<footer data-aos="fade-up">
+  <p>&copy; 2025 NEWays Bharat Federation | Empowering India at the Grassroots</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>

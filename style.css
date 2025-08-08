@@ -1,0 +1,109 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #064635;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      color: #F0A500;
+      font-size: 1.5rem;
+    }
+    header nav a {
+      color: white;
+      margin-left: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header nav a:hover {
+      color: #F0A500;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, rgba(6,70,53,0.9), rgba(6,70,53,0.5)), url('hero-placeholder.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+    section {
+      padding: 100px 50px 80px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #064635;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #F0A500;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+    p, li {
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #064635;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    @media(max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      header nav a {
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
