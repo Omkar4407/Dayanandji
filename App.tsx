@@ -97,7 +97,7 @@ function App() {
     const targets = {
       communities: 200,
       lives: 5000,
-      programs: 25,
+      programs: 34,
       years: 25
     };
 
@@ -284,54 +284,55 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
-                title: "Grassroots Work in Northeast",
-                shortDesc: "From relief efforts to entrepreneurship, NEWays Bharat Federation has been connecting remote tribal communities of Northeast India to the national mainstream.",
-                fullDesc: "From relief efforts to entrepreneurship, NEWays Bharat Federation has been connecting remote tribal communities of Northeast India to the national mainstream — empowering artisans, students, and farmers through education, market access, and virtual collaborations since the 1990s. Our comprehensive approach includes skill development programs, market linkage initiatives, and digital literacy campaigns that have transformed countless lives across the region.",
-                images: ["NW_NorthEast (2).jpg", "NW_NorthEast (10).jpg"],
-                imageAlts: ["Relief initiative", "Tribal product promotion"]
-              },
-              { 
-                title: "Har Ghar Ram Mandir", 
-                shortDesc: "As part of the 'Har Ghar Ram Mandir' initiative, symbolic Ram Mandirs were distributed to leaders across India.",
-                fullDesc: "As part of the 'Har Ghar Ram Mandir' initiative, symbolic Ram Mandirs were distributed to leaders like Shri Prithviraj Chavan, Shrikant Bhartiya, Sudhir Mungantiwar, and others on 22 January 2024. This nationwide outreach symbolizes 'Rashtra Bhiman' — bringing Lord Ram's ideals into every household. The initiative has strengthened cultural bonds and promoted unity across diverse communities, creating a sense of shared heritage and spiritual connection.",
-                images: ["NW_Ram (1).jpg", "NW_Ram (2).jpg"],
-                imageAlts: ["Distribution event 2", "Leaders with Ram Mandir"]
-              },
-              {
-                title: "Northeast India Promotion",
-                shortDesc: "During Diwali at Lokmanya Seva Sangh, we showcased unique tribal products and culture from Northeast India.",
-                fullDesc: "During Diwali at Lokmanya Seva Sangh, we showcased unique tribal products and culture from Northeast India. Visitors engaged with enthusiasm, learning about local crafts, tourism, and rural innovation — bridging connections beyond language and region. The event featured traditional handloom products, organic teas, bamboo crafts, and tribal jewelry, creating awareness about the rich cultural heritage and economic potential of the Northeast region.",
-                images: ["NW_NorthEast (15).jpg", "NW_NorthEast (12).jpg"],
-                imageAlts: ["Handicraft display", "Visitors at stall"]
-              },
-              {
-                title: "Connecting Rural to Urban",
-                shortDesc: "At the centenary Diwali Consumer Peth, NEWays Bharat Federation showcased rural Northeast India's treasures.",
-                fullDesc: "At the centenary Diwali Consumer Peth of Lokmanya Seva Sangh, NEWays Bharat Federation set up a joint stall with Namaste Mirror Monthly to showcase rural Northeast India's treasures — wild honey, high-curcumin turmeric, bamboo jewelry, blue/green tea, and Diwali gift boxes. With growing interest from Mumbai's conscious consumers, the initiative aims to bridge Northeast farmers, artisans, and tourism with urban markets and awareness, creating sustainable economic opportunities.",
-                images: ["NW_Product (1).jpg", "NW_Product (2).jpg"],
-                imageAlts: ["Diwali Gift Boxes", "Visitors at Stall"]
-              },
-              {
-                title: "Flood Relief in Assam",
-                shortDesc: "In response to Assam's devastating floods, NEWays Bharat Federation collaborated with local groups to provide comprehensive relief and rehabilitation support.",
-                fullDesc: "In response to Assam's devastating floods of 2022, NEWays Bharat Federation collaborated with local groups like 'Saffron Republic' in Barpeta to deliver comprehensive relief and rehabilitation support. Our immediate response included emergency essentials — food packets, clean drinking water, hygiene kits, and medical supplies — reaching over 5,000 affected families across 15 villages. Beyond immediate relief, we established long-term rehabilitation programs including temporary shelters, educational support for displaced children, and livelihood restoration initiatives for affected farmers and artisans. Inspired by this impactful work, patrons including Rajendra Joshi and Anil Vankudre stepped forward with generous support. One well-wisher also anonymously contributed towards building a new classroom and modern blackboard after learning about the educational challenges in the flood-affected Northeast. Our ongoing commitment includes disaster preparedness training, early warning systems, and community resilience building programs.",
-                images: ["NW_Floods (2).jpg", "NW_Article (2).jpg"],
-                imageAlts: ["Relief Distribution", "Volunteers in Barpeta"]
-              },
-              {
-                title: "Social-Entrepreneurial Bridge",
-                shortDesc: "Through programs like the Manipur–Mumbai Virtual Summit, we're building bridges between tribal producers and urban markets.",
-                fullDesc: "Through programs like the Manipur–Mumbai Virtual Summit, NEWays Bharat Federation is building a dynamic bridge between Northeast India's tribal producers and urban markets. From supporting underrepresented talents like Gohila Boro to showcasing traditional products and enabling student-industry collaboration, NEWays empowers communities with training, trade, and national visibility. This creates sustainable economic models that preserve cultural heritage while generating income.",
-                images: ["NW_Conferrence (1).jpg", "NW_Conferrence (2).jpg"],
-                imageAlts: ["Virtual Summit Session", "Tribal product showcase"]
-              },
-              {
-                title: "Home Tourism & Tribal Enterprise",
-                shortDesc: "NEWays Bharat Federation is promoting rural economic growth through Home Tourism in Northeast India.",
-                fullDesc: "NEWays Bharat Federation is promoting rural economic growth in Northeast India through Home Tourism, where urban guests stay with tribal families — like the Angami community in Viswema, Nagaland. Alongside, efforts are ongoing to market bamboo crafts, handloom silks, and organic farm produce across Indian cities, bridging cultures and boosting village economies while preserving traditional knowledge and skills.",
-                images: ["NW_Tribal (1).jpg", "NW_Tribal (2).jpg"],
-                imageAlts: ["Home stay in Nagaland", "Bamboo and silk products"]
-              }
+  title: "Grassroots Work in Northeast",
+  shortDesc: "From relief efforts to entrepreneurship, NEWays Bharat Federation has been connecting remote tribal communities of Northeast India to the national mainstream.",
+  fullDesc: "From relief efforts to entrepreneurship, NEWays Bharat Federation has been connecting remote tribal communities of Northeast India to the national mainstream — empowering artisans, students, and farmers through education, market access, and virtual collaborations since the 1990s. Our comprehensive approach includes skill development programs, market linkage initiatives, and digital literacy campaigns that have transformed countless lives across the region.",
+  images: ["NW_NorthEast (2).jpg", "NW_NorthEast (10).jpg"],
+  imageAlts: ["Relief initiative in Northeast India", "Promotion of tribal products in Northeast India"]
+},
+{ 
+  title: "Har Ghar Ram Mandir", 
+  shortDesc: "As part of the 'Har Ghar Ram Mandir' initiative, symbolic Ram Mandirs were distributed to leaders across India.",
+  fullDesc: "As part of the 'Har Ghar Ram Mandir' initiative, symbolic Ram Mandirs were distributed to leaders like Shri Prithviraj Chavan, Shrikant Bhartiya, Sudhir Mungantiwar, and others on 22 January 2024. This nationwide outreach symbolizes 'Rashtra Bhiman' — bringing Lord Ram's ideals into every household. The initiative has strengthened cultural bonds and promoted unity across diverse communities, creating a sense of shared heritage and spiritual connection.",
+  images: ["sample.jpg", "NW_Ram (2).jpg"],
+  imageAlts: ["Symbolic Ram Mandir distribution event", "Indian leaders with Ram Mandir gift"]
+},
+{
+  title: "Northeast India Promotion",
+  shortDesc: "During Diwali at Lokmanya Seva Sangh, we showcased unique tribal products and culture from Northeast India.",
+  fullDesc: "During Diwali at Lokmanya Seva Sangh, we showcased unique tribal products and culture from Northeast India. Visitors engaged with enthusiasm, learning about local crafts, tourism, and rural innovation — bridging connections beyond language and region. The event featured traditional handloom products, organic teas, bamboo crafts, and tribal jewelry, creating awareness about the rich cultural heritage and economic potential of the Northeast region.",
+  images: ["NW_NorthEast (15).jpg", "NW_NorthEast (12).jpg"],
+  imageAlts: ["Display of Northeast India handicrafts", "Visitors exploring tribal product stall"]
+},
+{
+  title: "Connecting Rural to Urban",
+  shortDesc: "At the centenary Diwali Consumer Peth, NEWays Bharat Federation showcased rural Northeast India's treasures.",
+  fullDesc: "At the centenary Diwali Consumer Peth of Lokmanya Seva Sangh, NEWays Bharat Federation set up a joint stall with Namaste Mirror Monthly to showcase rural Northeast India's treasures — wild honey, high-curcumin turmeric, bamboo jewelry, blue/green tea, and Diwali gift boxes. With growing interest from Mumbai's conscious consumers, the initiative aims to bridge Northeast farmers, artisans, and tourism with urban markets and awareness, creating sustainable economic opportunities.",
+  images: ["NW_Product (1).jpg", "NW_Product (2).jpg"],
+  imageAlts: ["Assorted Diwali gift boxes from Northeast India", "Visitors browsing rural products stall"]
+},
+{
+  title: "Flood Relief in Assam",
+  shortDesc: "In response to Assam's devastating floods, NEWays Bharat Federation collaborated with local groups to provide comprehensive relief and rehabilitation support.",
+  fullDesc: "In response to Assam's devastating floods of 2022, NEWays Bharat Federation collaborated with local groups like 'Saffron Republic' in Barpeta to deliver comprehensive relief and rehabilitation support. Our immediate response included emergency essentials — food packets, clean drinking water, hygiene kits, and medical supplies — reaching over 5,000 affected families across 15 villages. Beyond immediate relief, we established long-term rehabilitation programs including temporary shelters, educational support for displaced children, and livelihood restoration initiatives for affected farmers and artisans. Inspired by this impactful work, patrons including Rajendra Joshi and Anil Vankudre stepped forward with generous support. One well-wisher also anonymously contributed towards building a new classroom and modern blackboard after learning about the educational challenges in the flood-affected Northeast. Our ongoing commitment includes disaster preparedness training, early warning systems, and community resilience building programs.",
+  images: ["NW_Floods (2).jpg", "NW_Article (2).jpg"],
+  imageAlts: ["Volunteers distributing relief materials in Assam floods", "Group photo of relief team in Barpeta, Assam"]
+},
+{
+  title: "Social-Entrepreneurial Bridge",
+  shortDesc: "Through programs like the Manipur–Mumbai Virtual Summit, we're building bridges between tribal producers and urban markets.",
+  fullDesc: "Through programs like the Manipur–Mumbai Virtual Summit, NEWays Bharat Federation is building a dynamic bridge between Northeast India's tribal producers and urban markets. From supporting underrepresented talents like Gohila Boro to showcasing traditional products and enabling student-industry collaboration, NEWays empowers communities with training, trade, and national visibility. This creates sustainable economic models that preserve cultural heritage while generating income.",
+  images: ["NW_Conferrence (1).jpg", "NW_Conferrence (2).jpg"],
+  imageAlts: ["Virtual summit session between Manipur and Mumbai", "Showcase of traditional tribal products"]
+},
+{
+  title: "Home Tourism & Tribal Enterprise",
+  shortDesc: "NEWays Bharat Federation is promoting rural economic growth through Home Tourism in Northeast India.",
+  fullDesc: "NEWays Bharat Federation is promoting rural economic growth in Northeast India through Home Tourism, where urban guests stay with tribal families — like the Angami community in Viswema, Nagaland. Alongside, efforts are ongoing to market bamboo crafts, handloom silks, and organic farm produce across Indian cities, bridging cultures and boosting village economies while preserving traditional knowledge and skills.",
+  images: ["NW_Tribal (1).jpg", "NW_Tribal (2).jpg"],
+  imageAlts: ["Homestay experience with Angami family in Nagaland", "Bamboo crafts and silk products from Northeast India"]
+}
+
             ].map((service, index) => {
               const [isExpanded, setIsExpanded] = useState(false);
               
